@@ -1,11 +1,16 @@
 package test.prog;
 
-public class Cow extends Canine {
+public class Cow{
 
-    @Override
-    public void voice() {
-        System.out.println("Mooooo");
+    public Cow(){
+
     }
+
+    Cow(String s)
+    {
+        System.out.println("TestMoooo " + s);
+    }
+
 
 
 }
