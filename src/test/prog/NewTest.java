@@ -1,14 +1,17 @@
 package test.prog;
 
+import javax.sound.midi.MidiSystem;
+import javax.sound.midi.MidiUnavailableException;
+import javax.sound.midi.Sequencer;
+
 public class NewTest {
-    Integer i = 5;
-    int j;
 
-
-        public void go (){
-            j = i;
-            System.out.println(j);
-            System.out.println(i);
-
+    public void play() {
+        try {
+            Sequencer sequencer = MidiSystem.getSequencer();
+            System.out.println("Done");
+        } catch (MidiUnavailableException ex){
+            System.out.println("None");
         }
     }
+}

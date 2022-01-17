@@ -2,20 +2,19 @@ package test.prog;
 
 public class Dog extends Canine implements PetHome{
 
-    public Dog(String theName) {
-        super(theName);
+
+    public Dog(String name, int weight) {
+        super(name, weight);
     }
 
-
-    public Dog(){
-        this("noNameDog");
+    @Override
+    public void voice() {
+        System.out.println("Gav Gav");
     }
 
     @Override
     public void play() {
-        System.out.println("Play Home Dog");
+        System.out.println("Play like Dog");
     }
-
-
 }
 

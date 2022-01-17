@@ -1,21 +1,19 @@
 package test.prog;
 
-public class Cat extends Feline implements PetHome{
+public class Cat extends Canine implements PetHome{
 
 
-    public Cat(String theName) {
-        super(theName);
+    public Cat(String name, int weight) {
+        super(name, weight);
     }
 
     @Override
-    public void voice() {System.out.println("meay");}
-
-    public void voiceAnimal(){
-         super.voiceAnimal();
+    public void voice() {
+        System.out.println("Mey Mey");
     }
 
     @Override
     public void play() {
-        System.out.println("Play Home Cat");
+        System.out.println("Jumping");
     }
 }

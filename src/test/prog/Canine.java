@@ -3,12 +3,9 @@ package test.prog;
 abstract public class Canine extends Animal{
 
 
-    public Canine(String theName) {
-        super(theName);
+    public Canine(String name, int weight) {
+        super(name, weight);
     }
 
-
-    public void voice(){
-        System.out.println("gav");
-    }
+    abstract public void voice();
 }

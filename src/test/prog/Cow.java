@@ -1,18 +1,16 @@
 package test.prog;
 
-public class Cow{
+public class Cow extends Animal{
 
-    public Cow(){
 
+    public Cow(String name, int weight) {
+        super(name, weight);
     }
 
-    Cow(String s)
-    {
-        System.out.println("TestMoooo " + s);
+    @Override
+    public void voice() {
+        System.out.println("Mooooo");
     }
-
-
-
 }
 
 
