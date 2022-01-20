@@ -7,5 +7,4 @@ abstract public class Feline extends Animal{
         super(name, weight);
     }
 
-    abstract public void voice();
 }

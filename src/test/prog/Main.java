@@ -13,7 +13,15 @@ public class Main {
         list.add(cat);
         list.add(cow);
 
+        Animal[] a = new Animal[3];
+        a[0] = cow;
+        a[1] = cat;
+        a[2] = dog;
 
+        list.getData();
+        list.makeVoice();
+        list.getVoice(a);
+//        a.play();
 
     }
 }
